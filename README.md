@@ -8,11 +8,13 @@
 - Fixed goodnight (typo error)
 - Fixed additional package installation
 - Added List
+```js
  1. eating - sfw
  2. shoot -sfw
  3. waifu -sfw
  4. handshake - sfw
  5. lurk - sfw
+```
 
 ## Installation
 ```
