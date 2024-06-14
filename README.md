@@ -5,16 +5,8 @@
 [![NPM](https://nodei.co/npm/anime-actions.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/anime-actions/)
 
 ## New version detail
-- Fixed goodnight (typo error)
-- Fixed additional package installation
-- Added List
-```js
- 1. eating - sfw
- 2. shoot -sfw
- 3. waifu -sfw
- 4. handshake - sfw
- 5. lurk - sfw
-```
+- Fixed api links error
+- Removed uglyBastard and added zettaiRyouiki
 
 ## Installation
 ```
@@ -25,27 +17,25 @@ Now with SFW and NSFW
 
 ## ACTIONS
 
-| SFW | NSFW |
-
-| Actions | anime | real |
-| --- | --- | --- |
-| `baka`     | `ass` | `gif` |
-| `blush`    | `hentai` | `hd` |
-| `cuddle`   | `maid` | `anal` |
-| `bite`     | `gif` | `ass` |
-| `dance`    | `glass` | `pussy` |
-| `slap`     | `milf` | `thigh` |
-| `bonk`     | `blowjob` | `boobs` |
-| `bully`    | `feet` |
-| `hug`      | `pussy` |
-| `kiss`     | `uniform` |
-| `pat`      | `school` |
-| `wallpaper`| `boobs` |
-| `happy`    | `spank` |
-| `wink`     | `thigh` |
-| `kill`     | `succubus` |
-| `highfive` | `uglyBastard` |
-| `wave` | `wallpaper` |
+| Actions |
+| --- | ---  | 
+| `baka`     |
+| `blush`    |
+| `cuddle`   |
+| `bite`     | 
+| `dance`    |
+| `slap`     |
+| `bonk`     |
+| `bully`    |
+| `hug`      |
+| `kiss`     |
+| `pat`      |
+| `wallpaper`|
+| `happy`    |
+| `wink`     |
+| `kill`     |
+| `highfive` |
+| `wave` | 
 | `cry` |
 | `smile` |
 | `punch` |
@@ -76,17 +66,8 @@ client.once('ready', () => {
 	console.log('Ready to hug');
 });
 client.on('messageCreate', async(message) => {
-    /// SFW
     if(message.content === 'hug') {
         message.channel.send(await kakashi.hug())
-    }
-    /// NSFW ANIME
-    if(message.content === 'milf') {
-        message.channel.send(await kakashi.nsfw.anime.milf())
-    }
-    /// NSFW REAL
-    if(message.content === 'hd') {
-        message.channel.send(await kakashi.nsfw.real.hd())
     }
 })
 client.login('your-token');
@@ -96,23 +77,11 @@ client.login('your-token');
 Await/Async example
 ```js
 const kakashi = require('anime-actions');
-/// SFW
 async function hug() {
   console.log(await kakashi.hug());
 }
-/// NSFW
-/// ANIME
-async function milf() {
-  console.log(await kakashi.nsfw.anime.milf());
-}
-/// REAL
-async function hd() {
-  console.log(await kakashi.nsfw.real.hd());
-}
 
 hug();
-milf();
-hd();
 ```
 
 ## Support Server
